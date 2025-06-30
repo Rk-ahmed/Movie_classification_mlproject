@@ -110,7 +110,7 @@ You can also use `src/predict_genre.py` to test predictions from the terminal.
 
 ## 📷 Sample Screenshot
 
-*  <img width="365" alt="Image" src="https://github.com/user-attachments/assets/dab3045a-f015-4530-906d-adbb5c6e6ac3" />  *
+ <img width="365" alt="Image" src="https://github.com/user-attachments/assets/dab3045a-f015-4530-906d-adbb5c6e6ac3" />  
 
 ---
 
