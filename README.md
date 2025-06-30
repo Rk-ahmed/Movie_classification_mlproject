@@ -28,35 +28,36 @@ This project is an end-to-end machine learning application that predicts the **g
 
 ## 📁 Project Structure
 
-'''
+```
 movie-genre-classification/
 │
-├── apps/                 # Flask app
-│   ├── app.py
+├── apps/                      # Flask app and templates
+│   ├── app.py                 # Main Flask backend
 │   └── templates/
-│       └── index.html
+│       └── index.html         # HTML UI for prediction
 │
-├── data/                 # Dataset
+├── data/                      # Dataset files
 │   └── movie_genre_classification_final.csv
 │
-├── models/               # Saved model files
+├── models/                    # Saved model files
 │   ├── genre_model.pkl
 │   ├── desc_vectorizer.pkl
 │   ├── genre_label_encoder.pkl
 │   └── categorical_columns.pkl
 │
-├── notebooks/            # EDA notebook
+├── notebooks/                 # Jupyter notebooks for EDA
 │   └── eda.ipynb
 │
-├── src/                  # Core scripts
-│   ├── train_model.py
-│   └── predict_genre.py
+├── src/                       # Core Python scripts
+│   ├── train_model.py         # Model training script
+│   └── predict_genre.py       # Command-line prediction
 │
-├── venv/                 # Virtual environment (ignored in Git)
-├── requirements.txt
-├── .gitignore
-└── README.md
-'''
+├── venv/                      # Virtual environment (excluded in .gitignore)
+│
+├── requirements.txt           # All dependencies
+├── .gitignore                 # Git ignore rules
+└── README.md                  # Project overview and usage guide
+```
 
 ## 📊 Dataset
 
