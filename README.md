@@ -28,7 +28,7 @@ This project is an end-to-end machine learning application that predicts the **g
 
 ## 📁 Project Structure
 
----
+'''
 movie-genre-classification/
 │
 ├── apps/                 # Flask app
@@ -56,7 +56,7 @@ movie-genre-classification/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
----
+'''
 
 ## 📊 Dataset
 
