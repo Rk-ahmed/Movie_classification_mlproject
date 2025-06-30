@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Genre Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        textarea, input[type="text"], input[type="number"], select {
+            width: 100%;
+            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #00529B;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🎬 Movie Genre Prediction</h2>
+
+    <form method="POST">
+        <label for="description">Movie Description:</label>
+        <textarea name="description" rows="6" required placeholder="Example: A group of astronauts travel through a wormhole in search of a new home for humanity..."></textarea>
+
+        <label for="language">Language:</label>
+        <input type="text" name="language" placeholder="e.g., English">
+
+        <label for="country">Country:</label>
+        <input type="text" name="country" placeholder="e.g., USA">
+
+        <label for="content_rating">Content Rating:</label>
+        <input type="text" name="content_rating" placeholder="e.g., PG-13">
+
+        <label for="rating">IMDB Rating:</label>
+        <input type="number" step="0.1" name="rating" placeholder="e.g., 8.5">
+
+        <label for="votes">Number of Votes:</label>
+        <input type="number" name="votes" placeholder="e.g., 150000">
+
+        <label for="budget">Budget (USD):</label>
+        <input type="number" name="budget" placeholder="e.g., 100000000">
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" name="duration" placeholder="e.g., 120">
+
+        <input type="submit" value="Predict Genre">
+    </form>
+
+    {% if prediction %}
+        <h3>{{ prediction }}</h3>
+    {% endif %}
+
+</body>
+</html>
